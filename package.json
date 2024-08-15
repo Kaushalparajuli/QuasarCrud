@@ -1,0 +1,22 @@
+{
+  "name": "quasar-app-extension-quasar-crud-ext",
+  "version": "0.0.1",
+  "description": "Quasar Crud App",
+  "author": "kaushalparajuli <kaushal123parajuli@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kaushalparajuli/QuasarCrud.git"
+  },
+  "bugs": "https://github.com/Kaushalparajuli/QuasarCrud.git/issues",
+  "homepage": "https://github.com/Kaushalparajuli/QuasarCrud.git",
+  "engines": {
+    "node": ">= 12.2.0",
+    "npm": ">= 5.6.0",
+    "yarn": ">= 1.6.0"
+  }
+}
