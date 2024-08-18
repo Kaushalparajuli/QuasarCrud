@@ -2,7 +2,7 @@ Quasar App Extension quasar-crud-ext
 ===
 To use quasar-crud-kaushal in your Quasar project, follow these steps:
 
-# Clone the Repository
+### 1. Clone the Repository
 
 First, clone the repository to your local machine:
 
@@ -10,14 +10,14 @@ First, clone the repository to your local machine:
 git clone https://github.com/Kaushalparajuli/QuasarCrud.git
 ``` 
 
-# Navigate to the Directory
+### 2. Navigate to the Directory
 ```angular2html
 cd QuasarCrud
 ```
 
-# Install Dependencies
+### 3. Install Dependencies
 Install the required dependencies using npm or yarn:
-```angular2html
+```
  npm install
 ```
 
@@ -27,7 +27,7 @@ Or, if you prefer using Yarn:
 yarn install
 ```
 
-# Build or Start the Project
+### 4. Build or Start the Project
 
 •	To start the development server:
 ```angular2html
@@ -40,7 +40,7 @@ quasar dev
 ```
 
 
-#Dependencies
+# Dependencies
 
 This project relies on the following dependencies:
 
@@ -66,9 +66,9 @@ To use the quasar-crud-kaushal in your Quasar project:
 	3.	Leverage the provided components to manage data in your Quasar application.
 
 
-## Copy paste this code to /src/boot/axios.js
+## 5. Copy paste this code to /src/boot/axios.js
 
-```
+```javascript
 import { boot } from "quasar/wrappers";
 import axios from "axios";
 import { Notify } from "quasar";
