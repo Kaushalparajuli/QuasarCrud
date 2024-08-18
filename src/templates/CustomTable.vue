@@ -56,7 +56,7 @@ import {api} from "boot/axios";
 import {createDynamicStore} from "../stores/dynamicCrudStore";
 import FormField from "./FormField.vue";
 import ColSn from "./ColSn.vue";
-import { debounce } from 'lodash';
+import debounce from 'lodash/debounce.js';
 
 
 const props = defineProps({

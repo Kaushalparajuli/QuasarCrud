@@ -15,7 +15,10 @@ const entityModelNameCapitalized = capitalize(entityModelName);
 const entityModelNameStore = `${entityModelName}Store`;
 
 // Resolve paths relative to the Quasar project root
-const rootDir = path.resolve(__dirname, '../../..'); // Adjusted to go up to Quasar project root
+const rootDir = path.resolve(__dirname, '../../../'); // Adjusted to go up to Quasar project root
+
+console.log('root Dir', rootDir)
+
 const pagesDir = path.join(rootDir, 'src', 'pages', entityModelName);
 const componentsDir = path.join(rootDir, 'src', 'components', 'list', entityModelName);
 const storesDir = path.join(rootDir, 'src', 'stores');
