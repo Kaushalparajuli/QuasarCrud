@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import CustomTable from 'components/crud/CustomTable.vue';
+import CustomTable from 'quasar-crud-kaushal/src/templates/CustomTable.vue';
 
 const routePath = '${entityRouteUrl}';
 const apiUrlPath = '${entityApiUrl}';

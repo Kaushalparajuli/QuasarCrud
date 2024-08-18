@@ -35,8 +35,8 @@
 </template>
 
 <script setup>
-import Container from "components/common/Container.vue";
-import LabelValueCard from "components/common/LabelValueCard.vue";
+import Container from 'quasar-crud-kaushal/src/templates/Container.vue';
+import LabelValueCard from 'quasar-crud-kaushal/src/templates/LabelValueCard.vue';
 import { onMounted, ref } from "vue";
 import { api } from "boot/axios";
 import { useRoute, useRouter } from "vue-router";

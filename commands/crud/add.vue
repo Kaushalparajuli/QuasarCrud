@@ -13,7 +13,7 @@
 <script setup>
 import { useRoute, useRouter } from "vue-router";
 import { useQuasar } from "quasar";
-import CreateForm from "components/crud/CreateForm.vue";
+import CreateForm from 'quasar-crud-kaushal/src/templates/CreateForm.vue';
 import { use${entityModelNameCapitalized}Store } from 'stores/${entityModelName}Store';
 import {createDynamicStore} from "stores/dynamicCrudStore";
 import {onMounted} from "vue";
