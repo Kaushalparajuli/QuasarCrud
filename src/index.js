@@ -25,4 +25,7 @@ function extendConf(conf, api) {
     if (api.hasVite !== true) {
         conf.build.transpileDependencies.push(/quasar-crud-kaushal[\\/]src/);
     }
+
+    api.registerCommand('generate-crud', require('../commands/createCrud.js'));
+
 }
