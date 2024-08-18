@@ -1,4 +1,4 @@
-Quasar App Extension quasar-crud-ext
+Quasar App Extension quasar-crud-kaushal
 ===
 To use quasar-crud-kaushal in your Quasar project, follow these steps:
 
