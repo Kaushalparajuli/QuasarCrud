@@ -231,3 +231,6 @@ go to you project folder
 npm link quasar-crud-kaushal
 ```
 
+
+# NOTE : For package update please take pull from master branch and build package again 
+
