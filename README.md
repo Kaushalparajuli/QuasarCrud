@@ -27,16 +27,9 @@ Or, if you prefer using Yarn:
 yarn install
 ```
 
-### 4. Build or Start the Project
-
-•	To start the development server:
-```angular2html
-quasar dev
-```
-
-•	To build the project for production:
-```angular2html
-quasar dev
+## Add this package to node_modules
+```bash
+yarn add --dev  path/to/extension
 ```
 
 
@@ -224,9 +217,9 @@ export const cachedRoute = [
   },
 ];
 
+
+
 ```
-
-
 # Usage of this plugin
 Copy paste this code to scripts of  package.json file of your project
 ```
