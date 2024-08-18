@@ -27,7 +27,7 @@ Or, if you prefer using Yarn:
 yarn install
 ```
 
-## Add this package to node_modules
+## 4. Add this package to node_modules
 ```bash
 yarn add --dev  path/to/extension
 ```
