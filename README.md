@@ -40,7 +40,7 @@ quasar dev
 ```
 
 
-# Dependencies
+## Dependencies
 
 This project relies on the following dependencies:
 
@@ -64,6 +64,28 @@ To use the quasar-crud-kaushal in your Quasar project:
 	1.	Import the necessary components and utilities from the extension.
 	2.	Customize the CRUD operations according to your project’s requirements.
 	3.	Leverage the provided components to manage data in your Quasar application.
+
+## Dependencies install
+
+### 1. Tailwind css
+```
+npm install -D tailwindcss
+npx tailwindcss init
+```
+
+#### Copy paste in  - tailwind.config.js
+```javascript
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  prefix:'tw-',
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx,vue}'],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
 
 
 ## 5. Copy paste this code to /src/boot/axios.js
@@ -182,3 +204,20 @@ export default boot(({ app }) => {
 export { api, axios };
 
 ```
+
+## 5. Copy paste this code to /src/boot/cacheRoute.js
+> This file is required for caching route. you can add apu slug for cache route
+```javascript
+const base = `${process.env.API_URL}`;
+
+// NOTE: duration should be in hours
+export const cachedRoute = [
+  {
+    name: "meta_data",
+    url: "central/user/meta-data",
+    duration: 24, // hrs
+  },
+];
+
+```
+
