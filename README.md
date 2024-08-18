@@ -1,36 +1,54 @@
 Quasar App Extension quasar-crud-ext
 ===
 
-_Be sure to change this readme as appropriate for your app extension._
+To use quasar-crud-kaushal in your Quasar project, follow these steps:
 
-_Think about the organization of this file and how the information will be beneficial to the user._
+1. Clone the Repository
 
-> Add a short description of your App Extension. What does it do? How is it beneficial? Why would someone want to use it?
+First, clone the repository to your local machine:
 
-A Quasar Project
+git clone https://github.com/Kaushalparajuli/QuasarCrud.git
 
-# Install
-```bash
-quasar ext add quasar-crud-ext
-```
-Quasar CLI will retrieve it from the NPM registry and install the extension to your project.
+2. Navigate to the Directory
+cd QuasarCrud
+
+3. Install Dependencies
+Install the required dependencies using npm or yarn:
+npm install
+Or, if you prefer using Yarn:
+yarn install
+
+4. Build or Start the Project
+
+•	To start the development server:
+quasar dev
+
+•	To build the project for production:
+quasar dev
 
 
-## Prompts
+Dependencies
 
-> Explain the prompts here
+This project relies on the following dependencies:
 
+	•	@vitejs/plugin-vue - Vue.js plugin for Vite.
+	•	axios - Promise-based HTTP client.
+	•	lodash - Utility library for JavaScript.
+	•	moment - Library for parsing, validating, manipulating, and formatting dates.
+	•	quasar - Quasar Framework.
+	•	vite-plugin-tailwind - Tailwind CSS integration for Vite.
 
-# Uninstall
-```bash
-quasar ext remove quasar-crud-ext
-```
+DevDependencies
 
-# Info
-> Add longer information here that will help the user of your app extension.
+	•	autoprefixer - PostCSS plugin to parse CSS and add vendor prefixes.
+	•	postcss - Tool for transforming CSS with JavaScript.
+	•	tailwindcss - Utility-first CSS framework.
 
-# Other Info
-> Add other information that's not as important to know
+Usage
 
-# Donate
-If you appreciate the work that went into this App Extension, please consider [donating to Quasar](https://donate.quasar.dev).
+To use the quasar-crud-kaushal in your Quasar project:
+
+	1.	Import the necessary components and utilities from the extension.
+	2.	Customize the CRUD operations according to your project’s requirements.
+	3.	Leverage the provided components to manage data in your Quasar application.
+
