@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
+// Extract arguments
 const [,, entityModelName, entityApiPath = entityModelName, entityRouteUrl = entityModelName] = process.argv;
 
 if (!entityModelName) {
@@ -13,8 +14,8 @@ const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 const entityModelNameCapitalized = capitalize(entityModelName);
 const entityModelNameStore = `${entityModelName}Store`;
 
-// Paths
-const rootDir = path.join(__dirname, '..');
+// Resolve paths relative to the Quasar project root
+const rootDir = path.resolve(__dirname, '../../..'); // Adjusted to go up to Quasar project root
 const pagesDir = path.join(rootDir, 'src', 'pages', entityModelName);
 const componentsDir = path.join(rootDir, 'src', 'components', 'list', entityModelName);
 const storesDir = path.join(rootDir, 'src', 'stores');
@@ -43,24 +44,24 @@ let editTemplate = fs.readFileSync(path.join(commandsDir, 'edit.vue'), 'utf8');
 
 // Replace placeholders in the templates
 storeTemplate = storeTemplate.replace(/\${entityModelName}/g, entityModelName)
-  .replace(/\${entityModelNameCapitalized}/g, entityModelNameCapitalized)
-  .replace(/\${entityApiUrl}/g, entityApiPath);
+    .replace(/\${entityModelNameCapitalized}/g, entityModelNameCapitalized)
+    .replace(/\${entityApiUrl}/g, entityApiPath);
 componentTemplate = componentTemplate.replace(/\${entityModelName}/g, entityModelName)
-  .replace(/\${entityModelNameCapitalized}/g, entityModelNameCapitalized)
-  .replace(/\${entityRouteUrl}/g, entityRouteUrl)
-  .replace(/\${entityApiUrl}/g, entityApiPath);
+    .replace(/\${entityModelNameCapitalized}/g, entityModelNameCapitalized)
+    .replace(/\${entityRouteUrl}/g, entityRouteUrl)
+    .replace(/\${entityApiUrl}/g, entityApiPath);
 detailTemplate = detailTemplate.replace(/\${entityModelName}/g, entityModelName)
-  .replace(/\${entityModelNameCapitalized}/g, entityModelNameCapitalized)
-  .replace(/\${entityApiUrl}/g, entityApiPath)
-  .replace(/\${entityRouteUrl}/g, entityRouteUrl);
+    .replace(/\${entityModelNameCapitalized}/g, entityModelNameCapitalized)
+    .replace(/\${entityApiUrl}/g, entityApiPath)
+    .replace(/\${entityRouteUrl}/g, entityRouteUrl);
 addTemplate = addTemplate.replace(/\${entityModelName}/g, entityModelName)
-  .replace(/\${entityModelNameCapitalized}/g, entityModelNameCapitalized)
-  .replace(/\${entityApiUrl}/g, entityApiPath)
-  .replace(/\${entityRouteUrl}/g, entityRouteUrl);
+    .replace(/\${entityModelNameCapitalized}/g, entityModelNameCapitalized)
+    .replace(/\${entityApiUrl}/g, entityApiPath)
+    .replace(/\${entityRouteUrl}/g, entityRouteUrl);
 editTemplate = editTemplate.replace(/\${entityModelName}/g, entityModelName)
-  .replace(/\${entityModelNameCapitalized}/g, entityModelNameCapitalized)
-  .replace(/\${entityApiUrl}/g, entityApiPath)
-  .replace(/\${entityRouteUrl}/g, entityRouteUrl);
+    .replace(/\${entityModelNameCapitalized}/g, entityModelNameCapitalized)
+    .replace(/\${entityApiUrl}/g, entityApiPath)
+    .replace(/\${entityRouteUrl}/g, entityRouteUrl);
 
 // Check if files already exist and provide warnings
 let fileExists = false;

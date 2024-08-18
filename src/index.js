@@ -1,4 +1,6 @@
-import 'src/css/tailwind.css';
+
+const path = require('path');
+const { exec } = require('child_process');
 
 export default function (api) {
     // Quasar compatibility check; ensures compatibility with specific versions of Quasar
@@ -25,7 +27,5 @@ function extendConf(conf, api) {
     if (api.hasVite !== true) {
         conf.build.transpileDependencies.push(/quasar-crud-kaushal[\\/]src/);
     }
-
-    api.registerCommand('generate-crud', require('../commands/createCrud.js'));
 
 }

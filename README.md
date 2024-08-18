@@ -86,6 +86,13 @@ module.exports = {
 }
 ```
 
+#### Copy paste in  - /src/css/app.css
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
 
 
 ## 5. Copy paste this code to /src/boot/axios.js
@@ -221,15 +228,17 @@ export const cachedRoute = [
 
 
 # Usage of this plugin
-Goto Package folder and run
+Copy paste this code to scripts of  package.json file of your project
 ```
-npm init
+"scripts":{
+    "generate-crud":"node node_modules/quasar-crud-kaushal/commands/createCrud.cjs"
+}
+```
+To generate crud please type 
+```
+npm run generate-crud <storename : ex: kaushal> <api path : ex: kaushal> <route path : ex: kaushal>
 ```
 
-go to you project folder
-```
-npm link quasar-crud-kaushal
-```
 
 ## Generating a CRUD Template
 
