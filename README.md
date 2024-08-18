@@ -208,8 +208,6 @@ export { api, axios };
 ## 5. Copy paste this code to /src/boot/cacheRoute.js
 > This file is required for caching route. you can add apu slug for cache route
 ```javascript
-const base = `${process.env.API_URL}`;
-
 // NOTE: duration should be in hours
 export const cachedRoute = [
   {
