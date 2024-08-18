@@ -13,14 +13,14 @@
 </template>
 <script setup>
 import {useRouter, useRoute} from "vue-router";
-import ColText from "components/crud/columnFields/ColText.vue";
-import ColTextarea from "components/crud/columnFields/ColTextarea.vue";
-import ColBoolean from "components/crud/columnFields/ColBoolean.vue";
-import ColDate from "components/crud/columnFields/ColDate.vue";
-import ColNumber from "components/crud/columnFields/ColNumber.vue";
-import ColRadio from "components/crud/columnFields/ColRadio.vue";
-import ColUpload from "components/crud/columnFields/ColUpload.vue";
-import ColRelation from "components/crud/columnFields/ColRelation.vue";
+import ColText from "./ColText.vue";
+import ColTextarea from "./ColTextarea.vue";
+import ColBoolean from "./ColBoolean.vue";
+import ColDate from "./ColDate.vue";
+import ColNumber from "./ColNumber.vue";
+import ColRadio from "./ColRadio.vue";
+import ColUpload from "./ColUpload.vue";
+import ColRelation from "./ColRelation.vue";
 
 const router = useRouter()
 const route = useRoute()

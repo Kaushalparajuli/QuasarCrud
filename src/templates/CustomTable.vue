@@ -50,13 +50,12 @@
 <script setup>
 import {useRouter} from 'vue-router';
 import {useQuasar} from 'quasar';
-import {inject, onMounted, ref, watch, defineAsyncComponent} from 'vue';
-import ColFields from "components/crud/columnFields/ColFields.vue";
+import { onMounted, ref, watch} from 'vue';
+import ColFields from "./ColFields.vue";
 import {api} from "boot/axios";
-import {createPinia} from "pinia"
-import {createDynamicStore} from "stores/dynamicCrudStore";
-import FormField from "components/crud/formFields/FormField.vue";
-import ColSn from "components/crud/columnFields/ColSn.vue";
+import {createDynamicStore} from "../stores/dynamicCrudStore";
+import FormField from "./FormField.vue";
+import ColSn from "./ColSn.vue";
 import { debounce } from 'lodash';
 
 

@@ -38,7 +38,7 @@ import {useRouter, useRoute} from "vue-router";
 import {ref, onMounted, computed, watch} from "vue";
 import {api} from "boot/axios";
 import {Notify, useQuasar} from "quasar";
-import FileManagement from "components/crud/formFields/FileManagement.vue";
+import FileManagement from "./FileManagement.vue";
 
 const router = useRouter()
 const route = useRoute()

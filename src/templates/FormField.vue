@@ -14,16 +14,16 @@
 <script setup>
 import {useRouter, useRoute} from "vue-router";
 import {ref, onMounted, computed} from "vue";
-import InputField from "components/crud/formFields/InputField.vue";
-import SelectField from "components/crud/formFields/SelectField.vue";
-import CustomSelectField from "components/crud/formFields/CustomSelectField.vue";
-import CustomModelSelectField from "components/crud/formFields/CustomModelSelectField.vue";
-import RadioField from "components/crud/formFields/RadioField.vue";
-import CheckboxField from "components/crud/formFields/CheckboxField.vue";
-import ToggleField from "components/crud/formFields/ToggleField.vue";
-import DateField from "components/crud/formFields/DateField.vue";
-import DateTimeField from "components/crud/formFields/DateTimeField.vue";
-import FilePicker from "components/crud/formFields/FilePicker.vue";
+import InputField from "./InputField.vue";
+import SelectField from "./SelectField.vue";
+import CustomSelectField from "./CustomSelectField.vue";
+import CustomModelSelectField from "./CustomModelSelectField.vue";
+import RadioField from "./RadioField.vue";
+import CheckboxField from "./CheckboxField.vue";
+import ToggleField from "./ToggleField.vue";
+import DateField from "./DateField.vue";
+import DateTimeField from "./DateTimeField.vue";
+import FilePicker from "./FilePicker.vue";
 
 const router = useRouter()
 const route = useRoute()
