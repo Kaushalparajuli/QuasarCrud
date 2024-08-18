@@ -240,13 +240,5 @@ npm run generate-crud <storename : ex: kaushal> <api path : ex: kaushal> <route 
 ```
 
 
-## Generating a CRUD Template
-
-After installing the extension, you can generate a CRUD template in your project by running the following command:
-
-```bash
-quasar ext invoke quasar-crud-kaushal generate-crud
-```
-
 # NOTE : For package update please take pull from master branch and build package again 
 
