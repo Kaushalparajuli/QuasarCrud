@@ -219,3 +219,15 @@ export const cachedRoute = [
 
 ```
 
+
+# Usage of this plugin
+Goto Package folder and run
+```
+npm init
+```
+
+go to you project folder
+```
+npm link quasar-crud-kaushal
+```
+
