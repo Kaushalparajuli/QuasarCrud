@@ -201,6 +201,11 @@ extras: [
 ]
 ```
 
+## Add api base path in .env
+```
+VITE_API_URL=http://localhost:8000/api/
+```
+
 # Usage of this plugin
 Copy paste this code to scripts of  package.json file of your project
 ```
