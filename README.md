@@ -44,13 +44,18 @@ npx tailwindcss init
 ```javascript
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  prefix:'tw-',
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx,vue}'],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
+    prefix:'tw-',
+    content: [
+        'index.html',
+        './node_modules/quasar-crud-kaushal/**/*.{vue,js,ts,jsx,tsx}',
+        './src/**/*.{vue,js,ts,jsx,tsx}'
+    ],
+    theme: {
+        extend: {}
+    },
+    plugins: []
 }
+
 ```
 
 #### Copy paste in  - /src/css/app.css
