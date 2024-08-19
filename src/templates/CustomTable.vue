@@ -1,8 +1,8 @@
 <template>
 
-    <div class="flex tw-mb-3 tw-justify-between">
+    <div class="flex q-mb-lg justify-between items-center">
       <h6 class="tw-text-2xl">{{ $t(title.toLowerCase())}}</h6>
-          <div class="flex tw-gap-3 tw-justify-between tw-items-center">
+          <div class="flex tw-gap-3 justify-between items-center">
             <q-btn  v-if="tablePermission.filter_button && Object.keys(filter).length === 0" @click="clearFilter()" round unelevated icon="mdi-filter-remove-outline"  color="red-2"  />
 <!--            <q-input v-if="tablePermission.query" outlined label="Search" dense v-model="store.query" @keyup.enter="getData">-->
 <!--              <template #append>-->
@@ -56,7 +56,7 @@ import {api} from "boot/axios";
 import {createDynamicStore} from "../stores/dynamicCrudStore";
 import FormField from "./FormField.vue";
 import ColSn from "./ColSn.vue";
-import _ from 'lodash';
+// import _ from 'lodash';
 
 
 const props = defineProps({
@@ -106,9 +106,9 @@ const filterFields = ref([])
 const router = useRouter();
 const $q = useQuasar();
 
-watch(() => store.filters, _.debounce(() => {
-  getData();
-}, 500), { deep: true });
+// watch(() => store.filters, _.debounce(() => {
+//   getData();
+// }, 500), { deep: true });
 
 
 onMounted(() => {

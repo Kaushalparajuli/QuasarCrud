@@ -7,6 +7,7 @@
 <script setup>
 import CustomTable from 'quasar-crud-kaushal/src/templates/CustomTable.vue';
 
+
 const routePath = '${entityRouteUrl}';
 const apiUrlPath = '${entityApiUrl}';
 const title = '${entityModelNameCapitalized}';

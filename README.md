@@ -2,18 +2,10 @@ Quasar App Extension quasar-crud-kaushal
 ===
 To use quasar-crud-kaushal in your Quasar project, follow these steps:
 
-### 1. Clone the Repository
-
-First, clone the repository to your local machine:
-
+### 1. Installing package in project
 ```angular2html
-git clone https://github.com/Kaushalparajuli/QuasarCrud.git
+yarn add https://github.com/Kaushalparajuli/QuasarCrud.git
 ``` 
-
-### 2. Navigate to the Directory
-```angular2html
-cd QuasarCrud
-```
 
 ### 3. Install Dependencies
 Install the required dependencies using npm or yarn:
@@ -217,9 +209,16 @@ export const cachedRoute = [
   },
 ];
 
-
-
 ```
+
+## Add icons in quasar.conf.js
+```javascript
+extras: [
+'mdi-v7',
+'eva-icons',
+]
+```
+
 # Usage of this plugin
 Copy paste this code to scripts of  package.json file of your project
 ```

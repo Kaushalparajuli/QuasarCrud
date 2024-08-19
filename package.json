@@ -23,13 +23,7 @@
   "dependencies": {
     "@vitejs/plugin-vue": "^5.1.2",
     "axios": "^0.21.1",
-    "lodash": "^4.17.21",
     "moment": "^2.30.1",
-    "quasar": "^2.16.0",
-    "vite-plugin-tailwind": "^0.0.4"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.41"
+    "quasar": "^2.16.0"
   }
 }

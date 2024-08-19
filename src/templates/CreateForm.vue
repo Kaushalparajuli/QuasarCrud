@@ -22,8 +22,8 @@
 <script setup>
 import { useRoute, useRouter } from 'vue-router';
 import { Notify, useQuasar } from 'quasar';
-import FormField from 'components/crud/formFields/FormField.vue';
-import {inject, onMounted, ref} from "vue";
+import FormField from 'components/formFields/FormField.vue';
+import { onMounted, ref} from "vue";
 import {createDynamicStore} from "stores/dynamicCrudStore";
 import {api} from "boot/axios";
 import useValidation from "src/composable/useValidation";

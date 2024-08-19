@@ -13,7 +13,5 @@ module.exports = function (api) {
             conf.framework.plugins.push('Pinia');
         }
 
-        conf.build.transpileDependencies.push(/lodash/);
-
     });
 };
