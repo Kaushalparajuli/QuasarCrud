@@ -5,25 +5,7 @@ To use quasar-crud-kaushal in your Quasar project, follow these steps:
 ### 1. Installing package in project
 ```angular2html
 yarn add https://github.com/Kaushalparajuli/QuasarCrud.git
-``` 
-
-### 3. Install Dependencies
-Install the required dependencies using npm or yarn:
 ```
- npm install
-```
-
-Or, if you prefer using Yarn:
-
-```angular2html
-yarn install
-```
-
-## 4. Add this package to node_modules
-```bash
-yarn add --dev  path/to/extension
-```
-
 
 ## Dependencies
 
