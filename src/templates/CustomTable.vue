@@ -56,7 +56,6 @@ import {api} from "boot/axios";
 import {createDynamicStore} from "../stores/dynamicCrudStore";
 import FormField from "./FormField.vue";
 import ColSn from "./ColSn.vue";
-import * as _ from 'lodash';
 
 const props = defineProps({
   dynamicStoreName: {
@@ -105,9 +104,9 @@ const filterFields = ref([])
 const router = useRouter();
 const $q = useQuasar();
 
-watch(() => store.filters, _.debounce(() => {
+watch(() => store.filters, () => {
   getData();
-}, 500), { deep: true });
+}, { deep: true });
 
 
 onMounted(() => {
