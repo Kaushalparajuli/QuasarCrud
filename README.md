@@ -214,5 +214,3 @@ npm run generate-crud <storename : ex: kaushal> <api path : ex: kaushal> <route 
 ```
 
 
-# NOTE : For package update please take pull from master branch and build package again 
-
