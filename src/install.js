@@ -4,8 +4,6 @@ module.exports = function (api) {
         conf.boot.push('~quasar-crud-kaushal/src/boot/dynamicCrudStore.js');
         conf.boot.push('~quasar-crud-kaushal/src/boot/axios.js');
 
-
-
         // Make sure to add Pinia if not already included
         conf.build.transpileDependencies.push(/quasar-crud-kaushal[\\/]src/);
 
@@ -15,6 +13,7 @@ module.exports = function (api) {
         }
 
         conf.build.transpileDependencies.push(/lodash/);
+        conf.build.transpileDependencies.push(/moment/);
 
 
     });
