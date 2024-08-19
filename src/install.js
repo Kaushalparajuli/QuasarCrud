@@ -15,6 +15,5 @@ module.exports = function (api) {
         conf.build.transpileDependencies.push(/lodash/);
         conf.build.transpileDependencies.push(/moment/);
 
-
     });
 };
